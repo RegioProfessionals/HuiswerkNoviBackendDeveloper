@@ -28,7 +28,5 @@ public class RecipeSteps {
     }
 
 
-    public void printStepsInTheClass () {
-        System.out.println(ovenPreHeating.getRecipeStep());
-    }
+
 }

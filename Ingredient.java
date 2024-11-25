@@ -49,14 +49,28 @@ public class Ingredient {
 //        return "nummer: "+ this.number + " street: "+ this.street + " zipcode: "+ this.zipcode + "city: "+ this.city;
 
 
-    RecipeSteps ovenPreHeating = new RecipeSteps("1. - Verwarm de oven van te voren op 170 graden Celsius (boven en onderwarmte)");
-    RecipeSteps eggPreparation = new RecipeSteps("2. - Klop het ei los en verdeel deze in twee delen. De ene helft is voor het deeg, het andere deel is voor het bestrijken van de appeltaart.");
-    RecipeSteps doughMixing = new RecipeSteps("3. - Meng de boter, bastard suiker, zelfrijzend bakmeel, een helft van het ei, vanille suiker en een snufje zout tot een stevig deeg en verdeel deze in 3 gelijke delen.");
-    RecipeSteps prepareTheApples = new RecipeSteps("4. - Schil nu de appels en snij deze in plakjes. Vermeng in een kopje de suiker en kaneel.");
-    RecipeSteps prepareTheSpringformPan = new RecipeSteps("5. - Vet de springvorm in en bestrooi deze met bloem.");
-    RecipeSteps fillTheSpringformPanWithDough = new RecipeSteps("6. - Gebruik een deel van het deeg om de bodem van de vorm te bedekken. Gebruik een deel van het deeg om de rand van de springvorm te bekleden. Strooi het paneermeel op de bodem van de beklede vorm. De paneermeel neemt het vocht van de appels op.");
-    RecipeSteps fillTheSpringformWithApples = new RecipeSteps("7. - Doe de heft van de appels in de vorm en strooi hier 1/3 van het kaneel-suiker mengsel overheen. Meng de ander helft van de appels met het overgebleven kaneel-suiker mengsel en leg deze in de vorm.");
-    RecipeSteps prepareTheDoughGrid = new RecipeSteps("8. - Rol het laatste deel van de deeg uit tot een dunne lap en snij stroken van ongeveer 1 cm breed.");
-    RecipeSteps placeTheDoughGridOnTheSpringformPan = new RecipeSteps("9. - Leg de stroken kruislings op de appeltaart. Met wat extra deegstroken werk je de rand rondom af. Gebruik het overgebleven ei om de bovenkant van het deeg te bestrijken.");
-    RecipeSteps bakeTheCake = new RecipeSteps("10. - Zet de taart iets onder het midden van de oven. Bak de taart in 60 minuten op 170 graden Celsius (boven en onderwarmte) gaar en goudbruin.");
+    RecipeSteps ovenPreHeating = new RecipeSteps("Test 1");
+    RecipeSteps eggPreparation = new RecipeSteps("Test 2");
+    RecipeSteps doughMixing = new RecipeSteps("Test 3");
+    RecipeSteps prepareTheApples = new RecipeSteps("Test 4");
+    RecipeSteps prepareTheSpringformPan = new RecipeSteps("Test 5");
+    RecipeSteps fillTheSpringformPanWithDough = new RecipeSteps("Test 6");
+    RecipeSteps fillTheSpringformWithApples = new RecipeSteps("Test 7");
+    RecipeSteps prepareTheDoughGrid = new RecipeSteps("Test 8");
+    RecipeSteps placeTheDoughGridOnTheSpringformPan = new RecipeSteps("Test 9");
+    RecipeSteps bakeTheCake = new RecipeSteps("Test 10");
+
+    public void printStepsInTheClass () {
+        System.out.println(ovenPreHeating.getRecipeStep());
+        System.out.println(eggPreparation.getRecipeStep());
+        System.out.println(doughMixing.getRecipeStep());
+        System.out.println(prepareTheApples.getRecipeStep());
+        System.out.println(prepareTheSpringformPan.getRecipeStep());
+        System.out.println(fillTheSpringformPanWithDough.getRecipeStep());
+        System.out.println(fillTheSpringformWithApples.getRecipeStep());
+        System.out.println(prepareTheDoughGrid.getRecipeStep());
+        System.out.println(placeTheDoughGridOnTheSpringformPan.getRecipeStep());
+        System.out.println(bakeTheCake.getRecipeStep());
+    }
+
 }
