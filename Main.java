@@ -2,24 +2,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-        ApplePieRecipe recipeStep = new ApplePieRecipe("ovenPreHeating");
+        ApplePieRecipe recipe1 = new ApplePieRecipe();
+        RecipeSteps recipeStep1 = new RecipeSteps();
+
+        recipeStep1.printStepsInTheClass();
+        recipe1.printIngredients();
+        ApplePieRecipe.printSteps();
 
 
-        ApplePieRecipe.ovenPreHeating();
-        ApplePieRecipe.eggPreparation();
-        ApplePieRecipe.doughMixing();
-        ApplePieRecipe.prepareTheApples();
-        ApplePieRecipe.prepareTheSpringformPan();
-        ApplePieRecipe.fillTheSpringformPanWithDough();
-        ApplePieRecipe.fillTheSpringformWithApples();
-        ApplePieRecipe.prepareTheDoughGrid();
-        ApplePieRecipe.placeTheDoughGridOnTheSpringformPan();
-        ApplePieRecipe.bakeTheCake();
 
-       ApplePieRecipe("ovenPreHeating");
 
-//
-//        public String ApplePieRecipe
-//    }
     }
 }
