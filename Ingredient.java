@@ -1,9 +1,9 @@
 public class Ingredient {
-    private double amount;
-    private int unit;
-    private String name;
+    public double amount;
+    public String unit;
+    public String name;
 
-    public Ingredient(double amount, int unit, String name) {
+    public Ingredient(double amount, String unit, String name) {
         this.amount = amount;
         this.unit = unit;
         this.name = name;
@@ -18,7 +18,7 @@ public class Ingredient {
     public double getAmount() {
         return this.amount;
     }
-    public int getUnit() {
+    public String getUnit() {
         return this.unit;
     }
 
@@ -38,16 +38,3 @@ public class Ingredient {
 //        return "nummer: "+ this.number + " street: "+ this.street + " zipcode: "+ this.zipcode + "city: "+ this.city;
 
 }
-
-
-//- 200 gram ongezouten roomboter
-//- 200 gram witte bastard suiker
-//- 400 gram zelfrijzend bakmeel
-//- 1 stuk(s) ei
-//- 8 gram vanillesuiker
-//- 1 snuf zout
-//- 1.5 kilo zoetzure appels
-//- 75 gram kristal suiker
-//- 3 theelepels kaneel
-//- 15 gram paneermeel
-//}

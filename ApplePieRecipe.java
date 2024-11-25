@@ -1,18 +1,34 @@
 public class ApplePieRecipe {
 
-//    Ingredient
+//    Instantiate objects of the class Ingredient
 
-    public String unsaltedButter;
-    public String WhiteCasterSugar;
-    public String SelfRaisingFlour;
-    public String egg;
-    public String VanillaSugar;
-    public String Salt;
-    public String sweetAndSourApples;
-    public String granulatedSugar;
-    public String cinnamon;
-    public String breadCrumbs;
 
+    Ingredient unsaltedButter = new Ingredient(200, "gram", "unsaltedButter");
+    Ingredient whiteCasterSugar = new Ingredient(200,"gram","whiteCasterSugar");
+    Ingredient selfRaisingFlour = new Ingredient(400,"gram","selfRaisingFlour");
+    Ingredient egg = new Ingredient(1,"stuk(s)","egg");
+    Ingredient vanillaSugar = new Ingredient(8, "gram", "vanillaSugar");
+    Ingredient salt = new Ingredient(1, "snuf", "salt");
+    Ingredient sweetAndSourApples = new Ingredient(1.5,"kilo", "sweetAndSourApples");
+    Ingredient granulatedSugar = new Ingredient(75, "gram", "granulatedSugar");
+    Ingredient cinnamon = new Ingredient(3, "thee spoons", "cinnamon");
+    Ingredient breadCrumbs = new Ingredient(15, "gram", "breadCrumbs");
+
+//    Blueprint of the class ApplePieRecipe
+
+    public String recipeStep;
+
+    public ApplePieRecipe(String recipeStep) {
+            this.recipeStep = recipeStep;
+    }
+
+
+//    ---------------------------------------
+//      Methods of the class ApplePieRecipe
+//    ---------------------------------------
+//
+//      Methods to print the recipe
+//    ---------------------------------------
 
     public static void ovenPreHeating()  {
         System.out.println("1. - Verwarm de oven van te voren op 170 graden Celsius (boven en onderwarmte)");
@@ -23,7 +39,7 @@ public class ApplePieRecipe {
     public static void doughMixing()  {
         System.out.println("3. - Meng de boter, bastard suiker, zelfrijzend bakmeel, een helft van het ei, vanille suiker en een snufje zout tot een stevig deeg en verdeel deze in 3 gelijke delen.");
     }
-    public static void prepareTheAppels()  {
+    public static void prepareTheApples()  {
         System.out.println("4. - Schil nu de appels en snij deze in plakjes. Vermeng in een kopje de suiker en kaneel.");
     }
     public static void prepareTheSpringformPan()  {
@@ -41,7 +57,43 @@ public class ApplePieRecipe {
     public static void placeTheDoughGridOnTheSpringformPan()  {
         System.out.println("9. - Leg de stroken kuislings op de appeltaart. Met wat extra deegstroken werk je de rand rondom af. Gebruik het overgebleven ei om de bovenkant van het deeg te bestrijken.");
     }
-    public static void BakeTheCake()  {
+    public static void bakeTheCake()  {
         System.out.println("10. - Zet de taart iets onder het midden van de oven. Bak de taart in 60 minuten op 170 graden Celsius (boven en onderwarmte) gaar en goudbruin.");
     }
+
+//      Methods to print the ingredients
+//    ---------------------------------------
+//
+    public void printIngredients() {
+        System.out.println(unsaltedButter.getAmount() + " " + unsaltedButter.getUnit() + " " + unsaltedButter.getName());
+    }
+    public void printIngredients() {
+        System.out.println(whiteCasterSugar.getAmount() + " " + whiteCasterSugar.getUnit() + " " + whiteCasterSugar.getName());
+    }
+    public void printIngredients() {
+        System.out.println(selfRaisingFlour.getAmount() + " " + selfRaisingFlour.getUnit() + " " + selfRaisingFlour.getName());
+    }
+    public void printIngredients() {
+        System.out.println(egg.getAmount() + " " + egg.getUnit() + " " + egg.getName());
+    }
+    public void printIngredients() {
+        System.out.println(vanillaSugar.getAmount() + " " + vanillaSugar.getUnit() + " " + vanillaSugar.getName());
+    }
+    public void printIngredients() {
+        System.out.println(salt.getAmount() + " " + salt.getUnit() + " " + salt.getName());
+    }
+    public void printIngredients() {
+        System.out.println(sweetAndSourApples.getAmount() + " " + sweetAndSourApples.getUnit() + " " + sweetAndSourApples.getName());
+    }
+    public void printIngredients() {
+        System.out.println(granulatedSugar.getAmount() + " " + granulatedSugar.getUnit() + " " + granulatedSugar.getName());
+    }
+    public void printIngredients() {
+        System.out.println(cinnamon.getAmount() + " " + cinnamon.getUnit() + " " + cinnamon.getName());
+    }
+    public void printIngredients() {
+        System.out.println(breadCrumbs.getAmount() + " " + breadCrumbs.getUnit() + " " + breadCrumbs.getName());
+    }
+
+
 }
